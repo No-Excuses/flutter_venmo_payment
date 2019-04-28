@@ -1,0 +1,46 @@
+PODS:
+  - CMDQueryStringSerialization (0.4.1):
+    - ISO8601
+  - Flutter (1.0.0)
+  - ISO8601 (0.6.0)
+  - SSKeychain (1.4.1)
+  - Unofficial-Venmo-iOS-SDK (1.3.1):
+    - CMDQueryStringSerialization (~> 0.2)
+    - SSKeychain (~> 1.2)
+    - VENCore (~> 3.1)
+  - VENCore (3.1.3):
+    - CMDQueryStringSerialization (~> 0.4)
+  - venmo_payment (0.0.1):
+    - Flutter
+    - Unofficial-Venmo-iOS-SDK (~> 1.3.1)
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - venmo_payment (from `.symlinks/plugins/venmo_payment/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CMDQueryStringSerialization
+    - ISO8601
+    - SSKeychain
+    - Unofficial-Venmo-iOS-SDK
+    - VENCore
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  venmo_payment:
+    :path: ".symlinks/plugins/venmo_payment/ios"
+
+SPEC CHECKSUMS:
+  CMDQueryStringSerialization: 4bb0a2f5e7d8d8678d911d88072274952cbef4e5
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  Unofficial-Venmo-iOS-SDK: 11a2a71ddca469c4eeea043e8126af7947818765
+  VENCore: aa90ed1fb24a4d5410300bffa32ca946530b28e3
+  venmo_payment: 54165956ce29ba604b7a3b02e3d0edcfb4589c6f
+
+PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
+
+COCOAPODS: 1.5.3
