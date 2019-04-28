@@ -4,7 +4,7 @@ Flutter Plugin for sending Venmo Requests
 
 # Usage
 
-To initialize Venmo in your dart code, place this somewhere in the beginning:
+To initialize Venmo, place this somewhere in the beginning of your flutter application:
 ```dart
 import 'package:venmo_payment/venmo_payment.dart';
 VenmoPayment.initialize(appId: "####", secret: "********", name: "App Name");
