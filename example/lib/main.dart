@@ -39,11 +39,11 @@ class _MyAppState extends State<MyApp> {
                 ),
                 color: Colors.lightBlue,
                 onPressed: () async {
-                  _venmoResponse = await VenmoPayment.createPayment(
+                  _venmoResponse = (await VenmoPayment.createPayment(
                     recipientUsername: 'cj-lang',
                     fineAmount: 1,
                     description: 'Testing Venmo from Plugin',
-                  );
+                  )).toString();
                   setState(() => _venmoResponse = _venmoResponse);
                 },
               ),

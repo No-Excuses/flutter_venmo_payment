@@ -1,6 +1,5 @@
 group 'com.randomaccesssoftware.venmo_payment'
 version '1.0-SNAPSHOT'
-
 buildscript {
     repositories {
         google()
@@ -11,16 +10,13 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
-
 rootProject.allprojects {
     repositories {
         google()
         jcenter()
     }
 }
-
 apply plugin: 'com.android.library'
-
 android {
     compileSdkVersion 28
 
@@ -31,4 +27,8 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+}
+
+dependencies {
+    implementation files('libs/json_simple-1.1.jar')
 }

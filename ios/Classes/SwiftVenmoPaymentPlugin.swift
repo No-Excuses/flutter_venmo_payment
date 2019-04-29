@@ -25,6 +25,8 @@ public class SwiftVenmoPaymentPlugin: NSObject, FlutterPlugin {
           Venmo.sharedInstance().refreshToken(completionHandler: nil)
         }
       }
+      var responseParams = [String: Any] ()
+      responseParams["success"] = true
     } else if (call.method == "createVenmoPayment") {
       if (Venmo.isVenmoAppInstalled()) {
         let arguments = call.arguments as! [String:Any]
@@ -41,10 +43,13 @@ public class SwiftVenmoPaymentPlugin: NSObject, FlutterPlugin {
               responseParams["id"] = transaction?.transactionID ?? ""
               responseParams["error"] = (error)?.localizedDescription ?? ""
               responseParams["success"] = success
-              result (responseParams.description)
+              result (responseParams)
             })
       } else {
-        result("Error: Venmo not installed")
+        var responseParams = [String: Any] ()
+        responseParams["success"] = false
+        responseParams["error"] = "Venmo not installed"
+        result(responseParams)
       }
     } else {
       result("Error: Invalid method call")

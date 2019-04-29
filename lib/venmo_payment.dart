@@ -15,13 +15,13 @@ class VenmoPayment {
     await _channel.invokeMethod('initializeVenmo', params);
   }
 
-  static Future<String> createPayment({String recipientUsername, int fineAmount, String description}) async {
+  static Future<Map> createPayment({String recipientUsername, int fineAmount, String description}) async {
     Map<String, dynamic> params = <String, dynamic> {
       'recipientUsername': recipientUsername,
       'amount': fineAmount,
       'note': description,
     };
-    final String response = await _channel.invokeMethod('createVenmoPayment', params);
+    final Map response = await _channel.invokeMethod('createVenmoPayment', params);
     print(response);
     return response;
   }
