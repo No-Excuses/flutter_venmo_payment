@@ -1,5 +1,5 @@
 name: venmo_payment
-description: Flutter Plugin for sending Venmo Requests
+description: Flutter plugin to connect to Venmo APIs
 version: 0.0.1
 author:
 homepage:
