@@ -17,7 +17,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
  */
 public class VenmoPaymentPlugin implements MethodCallHandler, PluginRegistry.ActivityResultListener {
     private final Activity activity;
-    private final int REQUEST_CODE_VENMO_APP_SWITCH = 12151992;
+    private final int REQUEST_CODE_VENMO_APP_SWITCH = 1215;
     private Result result;
     private String appId;
     private String secret;
