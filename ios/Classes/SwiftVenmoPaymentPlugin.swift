@@ -43,6 +43,7 @@ public class SwiftVenmoPaymentPlugin: NSObject, FlutterPlugin {
               responseParams["id"] = transaction?.transactionID ?? ""
               responseParams["error"] = (error)?.localizedDescription ?? ""
               responseParams["success"] = success
+              responseParams["transaction"] = transaction ?? "Sucks to suck"
               result (responseParams)
             })
       } else {
