@@ -15,8 +15,8 @@ Flutter Plugin for sending Venmo Requests
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'Unofficial-Venmo-iOS-SDK', '1.3.1'
+  s.dependency 'Unofficial-Venmo-iOS-SDK', '1.3.6'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 end
 
